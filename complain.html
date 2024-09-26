@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complain Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            margin: 0; /* Remove margin for a tighter layout */
+        }
+        .form-container {
+            max-width: 600px; /* Limit width of the form */
+            margin: 20px auto; /* Center the form */
+            padding: 20px;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px;
+            background-color: #f9f9f9; /* Light background */
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Menu -->
+    <header>
+        <div class="container text-center mt-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a> <!-- Link to Home Page -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/newUpdates.html">New Updates</a> <!-- Link to New Updates Page -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/complain.html">Complains</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/solution.html">Solutions</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Complain Form Section -->
+    <main class="container">
+        <div class="form-container">
+            <h2>Submit a Complain</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mobile" class="form-label">Mobile Number</label>
+                    <input type="tel" class="form-control" id="mobile" name="mobile" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="ward" class="form-label">Ward</label>
+                    <input type="text" class="form-control" id="ward" name="ward" required>
+                </div>
+                <div class="mb-3">
+                    <label for="issueDescription" class="form-label">Issue Description</label>
+                    <textarea class="form-control" id="issueDescription" name="issueDescription" rows="4" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="doc" class="form-label">Upload Document (optional)</label>
+                    <input type="file" class="form-control" id="doc" name="doc">
+                </div>
+                <div class="mb-3">
+                    <label for="photo" class="form-label">Capture Live Photo (optional)</label>
+                    <input type="file" class="form-control" id="photo" name="photo" accept="image/*" capture="camera">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
